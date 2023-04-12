@@ -14,3 +14,4 @@ const puzzle = (a, b) => {
 console.log(puzzle(8, 4));
 
 //2
+/* 
