@@ -31,4 +31,12 @@ const puzzle = (a, b) => {
   console.log(task (5));
   console.log(task (4));
 
+  //3
+  //3.1
+  const exercise = (n) => {
+    console.log(n ** 2);
+  }
+  exercise (7);
+  
+
   
