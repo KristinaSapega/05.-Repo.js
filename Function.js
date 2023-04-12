@@ -30,3 +30,5 @@ const puzzle = (a, b) => {
   };
   console.log(task (5));
   console.log(task (4));
+
+  
