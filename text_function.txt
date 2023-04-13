@@ -119,3 +119,39 @@ function greeting() {
       }
       
       console.log(cube());
+
+      //7
+      /* Создайте объекты circle1 и circle2 со свойством radius. 
+      У объектов должен быть методам getArea, которое возвращает площадь круга 
+      через радиус, а также getPerimeter, который возвращает периметр окружности.*/
+      
+      /* Площадь круга S = πr² 
+      S - площадь круга, r - радиус круга, а π - число 3.14
+      Периметр окружности P = 2 * pi * r, где r - радиус окружности, 
+      а pi - математическая константа = 3.14 */
+
+      function getCircleArea () {
+        return this.radius * 3.14;
+    }
+    function getCirclePerimeter () {
+        return this.radius * 2 * 3.14;
+    }
+
+    const circle1 = {
+        radius: 7,
+
+        getArea: getCircleArea,
+        getPerimeter: getCirclePerimeter,
+    };
+
+    const circle2 = {
+        radius: 50,
+
+        getArea: getCircleArea,
+        getPerimeter: getCirclePerimeter,
+    };
+
+    console.log(circle1.getArea ());
+    console.log(circle1.getPerimeter());
+    console.log(circle2.getArea());
+    console.log(circle2.getPerimeter());

@@ -110,6 +110,37 @@ const puzzle = (a, b) => {
       
       console.log(cube());
 
+    //7
+    /* Создайте объекты circle1 и circle2 со свойством radius. 
+    У объектов должен быть методам getArea, которое возвращает площадь круга 
+    через радиус, а также getPerimeter, который возвращает периметр окружности.*/
+
+    function getCircleArea () {
+        return this.radius * 3.14;
+    }
+    function getCirclePerimeter () {
+        return this.radius * 2 * 3.14;
+    }
+
+    const circle1 = {
+        radius: 7,
+
+        getArea: getCircleArea,
+        getPerimeter: getCirclePerimeter,
+    };
+
+    const circle2 = {
+        radius: 50,
+
+        getArea: getCircleArea,
+        getPerimeter: getCirclePerimeter,
+    };
+
+    console.log(circle1.getArea ());
+    console.log(circle1.getPerimeter());
+    console.log(circle2.getArea());
+    console.log(circle2.getPerimeter());
+
 
           
 
