@@ -61,7 +61,7 @@ const puzzle = (a, b) => {
     let age = Number (prompt ('Сколько вам лет?'));
     if (age < 0) {
         console.log('Вы ввели неправильное значение');
-        } else if (age = 0 || age >= 12) {
+        } else if (age = 0 || age <= 12) {
         console.log('Привет, друг!');
         } else {
         console.log('Добро пожаловать!');
