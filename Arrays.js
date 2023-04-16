@@ -8,5 +8,15 @@ for (let i = 0; i < numbs.length; i++) {
     console.log(numbs[i]);
 }
 
-//2/
+//2
+/* Дан массив: 
+[1, 5, 4, 10, 0, 3].
+Найдите позицию числа 4 в этом массиве.*/
+
+const numbs2 = [1, 5, 4, 10, 0, 3];
+const index = numbs2.indexOf(4);
+console.log(index);
+
+//3
+
 
