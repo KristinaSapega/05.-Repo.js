@@ -72,6 +72,12 @@ if (numbers.includes (input)) {
 }
 
 //8
+/*Дана строка: 'abcdef'.
+Необходимо, чтобы программа вывела в консоль 'fedcba'.*/
 
+let arr4 = 'abcdef';
+let result = arr4.split('').reverse().join('');
+console.log(result);
 
+//
 
