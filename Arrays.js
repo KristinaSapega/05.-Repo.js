@@ -18,5 +18,13 @@ const index = numbs2.indexOf(4);
 console.log(index);
 
 //3
+/*Дан массив чисел: [1, 3, 5, 10, 20].
+С помощью метода join выведите элементы массива
+через пробел (пустую строку ' ').*/
 
+let numbs3 = [1, 3, 5, 10, 20];
+numbs3 = numbs3.join(' ');
+console.log(numbs3);
+
+//4
 
