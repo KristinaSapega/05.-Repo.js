@@ -8,5 +8,5 @@ for (let i = 0; i < numbs.length; i++) {
     console.log(numbs[i]);
 }
 
-//2
+//2/
 
