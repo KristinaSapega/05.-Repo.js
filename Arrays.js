@@ -112,6 +112,16 @@ console.log(squared);
 
 
 //12
+/* Создайте функцию, которая принимает на вход массив строк, 
+а возвращает массив длинны слов.*/
+
+const c = ['apple', 'capcake', 'car', 'travel'];
+const getLengthWords = arr => arr.map(word => word.length);
+console.log(getLengthWords(c)); 
+
+//13
+
+
 
 
 

@@ -176,4 +176,29 @@ let squared = b.map(item => (item ** 2));
 console.log(squared);
 
 //12
+/* Создайте функцию, которая принимает на вход массив строк, 
+а возвращает массив длинны слов.*/
+
+const c = ['apple', 'capcake', 'car', 'travel'];
+const getLengthWords = arr => arr.map(word => word.length);
+console.log(getLengthWords(c)); 
+
+вар 2
+function getLengthWords(arr) {
+    return arr.map(word => word.length);
+  }
+const c = ['apple', 'capcake', 'car', 'travel'];
+const wordLengths = getLengthWords(c);
+console.log(wordLengths);
+
+В данном случае, мы хотим вернуть массив длин слов из массива строк c. 
+Для этого мы используем метод map(), который применяет анонимную функцию к
+каждому элементу c. Эта функция берет каждое слово в массиве и возвращает его
+длину, используя свойство length. В данном случае word - это название 
+параметра функции, которое мы можем использовать внутри функции для ссылки 
+на текущий элемент массива.
+Поэтому запись word => word.length означает, что мы берем текущий элемент 
+массива word и возвращаем его свойство length, которое является длиной этого слова.
+
+//13
 /*
