@@ -79,5 +79,18 @@ let arr4 = 'abcdef';
 let result = arr4.split('').reverse().join('');
 console.log(result);
 
-//
+//9
+/* Дан массив: 
+[[1, 2, 3,],[4, 5, 6]].
+Выведите в консоль массив вида: 
+[1, 2, 3, 4, 5, 6]*/
+
+let arr5 = [[1, 2, 3,],[4, 5, 6]];
+let result2 = arr5[0].concat(arr5[1]);
+console.log(result2);
+
+//10
+
+
+
 
