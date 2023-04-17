@@ -120,8 +120,12 @@ const getLengthWords = arr => arr.map(word => word.length);
 console.log(getLengthWords(c)); 
 
 //13
+/* Создайте функцию, которая принимает на вход массив целых чисел, 
+а возвращает массив содержащий только отрицательные значения.*/
 
-
+const d = [4, 5, 7, 9, 2, 0];
+let negativ = d.map(item => (item * (-1)));
+console.log(negativ);
 
 
 
