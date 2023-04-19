@@ -40,7 +40,17 @@ console.log(`Наибольшее число: ${max}`);
 console.log(`Наименьшее число: ${min}`);
 
 //5
+/*Создайте функцию, которая будет выводить в консоль 
+рандомное число от 1 до 10.*/
 
+function generateRandomNumber() {
+    const randomNumber = Math.floor(Math.random() * 10) + 1;
+    console.log(randomNumber);
+  }
+  generateRandomNumber();
 
+//6
+
+  
 
 
