@@ -317,7 +317,17 @@ const result3 = Math.round(num3);
 console.log(result3); //32
 
 //4
+/*Даны числа 52, 53, 49, 77, 21, 32. 
+Необходимо найти среди этих чисел наименьшее и наибольшее числа и вывести их в консоль.*/
+
+const numbers = [52, 53, 49, 77, 21, 32];
+const max = Math.max(...numbers);
+const min = Math.min(...numbers);
+
+console.log(`Наибольшее число: ${max}`);
+console.log(`Наименьшее число: ${min}`);
 
 
+//5
 
 
