@@ -285,6 +285,23 @@ let str = 'js';
 console.log(str.toUpperCase()); //JS
 
 //2
+Создайте функцию, которая в качестве параметров принимает массив строк и строку. 
+Возвращать данная функция должна новый массив, содержащий только те элементы 
+переданного массива, которые начинаются с переданной строки. 
+Регистр символов не должен влиять.
+
+const fruits = ['apple', 'pineapple', 'pear', 'strawberry', 'blueberry'];
+const search = 'apple';
+fruits.forEach((fruits) => {
+    if (fruits.toLocaleLowerCase ().includes(search.toLowerCase ())) {
+        console.log(fruits);
+    }
+}
+) // apple pineapple
+
+//3
+
+
 
 
 
