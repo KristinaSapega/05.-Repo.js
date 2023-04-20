@@ -85,5 +85,12 @@ function getRandomNumber(min, max) {
 let currentDate = new Date();
 console.log(currentDate);
 
-
 //9
+/*Создайте переменную currentDate и сохраните в нее текущую дату. 
+Выведите дату, которая наступит через 73 дня после текущей.*/
+
+let currentDate2 = new Date();
+currentDate2.setDate(currentDate2.getDate() + 73);
+console.log(currentDate2);
+
+//10
