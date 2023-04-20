@@ -79,4 +79,11 @@ function getRandomNumber(min, max) {
 
 
 //8
+/*Выведите в консоль текущую дату в стандартном режиме. 
+Используйте один из трех рассмотренных в уроке способов.*/
 
+let currentDate = new Date();
+console.log(currentDate);
+
+
+//9
