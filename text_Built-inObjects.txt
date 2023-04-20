@@ -347,5 +347,58 @@ generateRandomNumber();
 и выводим его в консоль с помощью функции console.log().
 
 //6
+/* Напишите функцию, которая будет принимать на вход целое число, 
+а возвращать массив случайных целых чисел от 0 до переданного числа. 
+Длина массива должна быть в 2 раза меньше переданного числа.*/
+
+function getRandomArrNumbers (n) {
+    const arr = [];
+    const length = Math.floor(n / 2);
+    for (let i = 0; i < length; i++) {
+      const randomNumbers = Math.floor(Math.random() * (n + 1));
+      arr.push(randomNumbers);
+    }
+    return arr;
+  }
+    const n = 5;
+    const arrNumbers = getRandomArrNumbers(n);
+    console.log(arrNumbers);
+
+! ! ! Функция getRandomArrNumbers(), которая принимает один аргумент 
+n — целое число, задающее верхнюю границу случайных чисел в массиве.
+//создаем пустой массив arr
+    const arr = []; 
+
+затем находим половину от заданного числа n с помощью функции Math.floor() 
+и сохраняем это значение в переменную length
+    const length = Math.floor(n / 2);
+
+далее запускаем цикл for, который повторяется length раз:
+    for (let i = 0; i < length; i++) {
+        //...
+    }
+
+внутри цикла генерируем случайное целое число от 0 до n 
+с помощью функции Math.random(), умножая ее результат на n + 1 
+и округляя его до целого числа с помощью функции Math.floor(). 
+затем сохраняем это число в переменную randomNumber и 
+добавляем его в массив arr с помощью метода push():
+
+    const randomNumbers = Math.floor(Math.random() * (n + 1));
+      arr.push(randomNumbers);
+    
+в результате каждой итерации цикла мы генерируем случайное целое число
+от 0 до n и добавляем его в массив arr.
+
+после завершения цикла мы возвращаем массив arr с помощью оператора return:
+
+    return arr;
+
+//7
+
+
+
+
+
 
 

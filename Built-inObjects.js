@@ -50,7 +50,24 @@ function generateRandomNumber() {
   generateRandomNumber();
 
 //6
-
+/* Напишите функцию, которая будет принимать на вход целое число, 
+а возвращать массив случайных целых чисел от 0 до переданного числа. 
+Длина массива должна быть в 2 раза меньше переданного числа.*/
   
+function getRandomArrNumbers (n) {
+    const arr = [];
+    const length = Math.floor(n / 2);
+    for (let i = 0; i < length; i++) {
+      const randomNumbers = Math.floor(Math.random() * (n + 1));
+      arr.push(randomNumbers);
+    }
+    return arr;
+  }
+    const n = 5;
+    const arrNumbers = getRandomArrNumbers(n);
+    console.log(arrNumbers);
+
+//7
+
 
 
