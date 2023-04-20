@@ -68,6 +68,15 @@ function getRandomArrNumbers (n) {
     console.log(arrNumbers);
 
 //7
+/*Напишите функцию, которая на вход принимает 2 целых числа, 
+а в качестве результата возвращает случайное целое число в этом диапазоне*/
+
+function getRandomNumber(min, max) {
+  return Math.floor(Math.random() * (max - min + 1) + min);
+}
+    const randomNumber = getRandomNumber(3, 7);
+    console.log(randomNumber);
 
 
+//8
 
