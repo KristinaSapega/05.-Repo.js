@@ -94,3 +94,31 @@ currentDate2.setDate(currentDate2.getDate() + 73);
 console.log(currentDate2);
 
 //10
+/* Написать функцию, которая на вход принимает дату, 
+а возвращает ее отображение в виде:
+
+Дата: <число> <месяц на русском> <год> - это <день недели на русском>.
+
+Время: <часы>:<минуты>:<секунды>
+
+Время, которое будет выведено, также хранится в объекте Date.*/
+
+const days = ["Воскресенье", "Понедельник", "Вторник", "Среда", "Четверг", "Пятница", "Суббота"];
+const months =["Январь", "Февраль", "Март", "Апрель", "Май", "Июнь", "Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь"];
+let myDate = new Date();
+myDate.setDate(24);
+myDate.setMonth(5);
+myDate.setYear(2023);
+let fullDate = "Дата:" + " " + myDate.getDate() + " " + months[myDate.getMonth()] + " "
++ myDate.getFullYear() + " - это " + days[myDate.getDay()] + "." + "\nВремя:" + " " + myDate.getHours() + ":" + myDate.getMinutes() + ":" 
++ myDate.getSeconds();
+console.log(fullDate);
+
+
+//11
+
+
+
+
+
+
