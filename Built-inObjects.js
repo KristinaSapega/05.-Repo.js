@@ -6,7 +6,7 @@ console.log(str.toUpperCase()); //JS
 const fruits = ['apple', 'pineapple', 'pear', 'strawberry', 'blueberry'];
 const search = 'apple';
 fruits.forEach((fruits) => {
-    if (fruits.toLocaleLowerCase ().includes(search.toLowerCase ())) {
+    if (fruits.toLocaleLowerCase().includes(search.toLowerCase())) {
         console.log(fruits);
     }
 }
