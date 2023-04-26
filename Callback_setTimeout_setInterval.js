@@ -106,53 +106,33 @@ each(arr, reversArr); // ['two', 9, '4', 1]*/
 const arr = [1, '4', false, 9, 'two'];
 each(arr, toNumberArr); // [1, 4, 0, 9]*/
 
-function reversArr(item) {
-    if (Array.isArray(item)) {
-      return item.reverse();
-    } else {
-      return item;
+function reversArr(arr) {
+    return arr.reverse()
     }
-  }
-  
-  function each(arr, callback) {
-    const reversedArr = arr.reverse(); // переворачиваем исходный массив?
-    const result = callback(reversedArr); // применяем callback-функцию к перевернутому массиву
-    return result;
-  }
-  
-  const arr = [1, '4', 9, 'two'];
-  const resultArr = each(arr, reversArr);
-  console.log(resultArr);
+    
+    function each(arr, callback) {
+    callback(arr) 
+    }
+    
+    const arr = [1, '4', 9, 'two'];
+    each(arr, reversArr);
+    console.log(arr);
+    
 
 /*Преобразовывать все элементы к числу; если элемент 
 получился NaN, то удалять его:
 const arr = [1, '4', false, 9, 'two'];
 each(arr, toNumberArr); // [1, 4, 0, 9]*/
 
-function toNumberArr2(item) { //Объявление функции toNumberArr, которая принимает параметр item.
-    const num = Number(item); //Создание переменной num и присвоение ей значения, полученного из item с помощью метода Number().
-    if (isNaN(num)) { //Проверка, является ли num не числом (NaN) с помощью функции isNaN()
-      return null; //Если num является NaN, то функция возвращает значение null.
-    }
-    return num; //Если num не является NaN, то функция возвращает его значение.
-  }
-  
-  function each(arr2, callback) { //Объявление функции each, которая принимает два параметра: arr (массив) и callback (функция обратного вызова).
-    for (let i = arr2.length - 1; i >= 0; i--) { //Создание цикла for со счетчиком i, который проходит по массиву arr в обратном порядке.
-      const item = callback(arr2[i]); //Вызов функции callback для элемента arr[i] и присвоение ее результата переменной item.
-      if (item === null) { //Если значение item равно null, то удаляем элемент i массива с помощью метода splice().
-        arr2.splice(i, 1);
-      } else { //Если значение item не равно null, то присваиваем его элементу i массива arr.
-        arr2[i] = item;
-      }
-    }
-  }
-  
-  const arr2 = [1, '4', false, 9, 'two']; //Объявление переменной arr и присвоение ей значения массива [1, '4', false, 9, 'two'].
-  each(arr2, toNumberArr2); //Вызов функции each с параметрами arr и toNumberArr.
-  console.log(arr2); /*Вывод массива arr в консоль. 
-  Результатом будет массив [1, 4, 0, 9], 
-  так как значения false и 'two' были преобразованы в числа 0 и удалены из массива.*/
+let arr2 = [1, '4', false, 9, 'two'];
+arr2 = arr2.filter(function(item) {
+  return !isNaN(item);
+});
+arr2 = arr2.map(function(item) {
+  return Number(item);
+});
+console.log(arr2);
+
 
 //4
 /*Напишите программу, которая на протяжении 30 секунд, 
