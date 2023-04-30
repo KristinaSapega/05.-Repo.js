@@ -11,7 +11,7 @@ function strCount(str, letter){
     // которая соответствует количеству вхождений символа в строку
     return filteredArr.length;
   }
-  console.log(strCount("hello world", "r"));
+  console.log(strCount("hello world", "r")); //1
 
   //вар 2
   function strCount(str, letter){  
@@ -26,7 +26,7 @@ function strCount(str, letter){
     return count;
     
   }
-  console.log (strCount ("sun shine is bright", "m"));
+  console.log (strCount ("sun shine is bright", "m")); //0
 
   //task 2
 // Создаем функцию squareSum, которая принимает массив чисел numbers в качестве аргумента
@@ -41,7 +41,7 @@ function strCount(str, letter){
     }, 0);
   }
   
-  console.log(squareSum([3, 2, 2]));
+  console.log(squareSum([3, 2, 2])); //17
 
   //вар 2
   function squareSum(numbers){
@@ -95,4 +95,11 @@ function strCount(str, letter){
   console.log(solution('world'));
 
   //task 5
+  function addLength(str) {
+        return str.split(' ').map(word => `${word} ${word.length}`);  //разбиваем исходную строку на отдельные слова, используя пробел в качестве разделителя
+      } //Затем метод map() применяется к массиву слов, который был получен после применения split(), и для каждого слова создаётся новая строка, состоящая из слова и его длины
+      console.log(addLength('hello world')); //[ 'hello 5', 'world 5' ]
+
+//task 6
+
   
