@@ -50,6 +50,29 @@ function strCount(str, letter){
   
   console.log(squareSum([3, 2, 2]));
 
+  //вар 3
+  function squareSum(numbers){
+    let sum = 0;
+    numbers.forEach(function(n) {
+      sum += n * n
+    });
+    return sum;
+  }
+  
+  console.log(squareSum([3, 2, 2]));
+
 
 
   //task 3
+  function nearestSq(n) {
+    const minSq = Math.floor(Math.sqrt(n)); // находим ближайший меньший квадрат числа n и присваиваем его переменной minSq
+    const maxSq = Math.ceil(Math.sqrt(n)); // находим ближайший больший квадрат числа n и присваиваем его переменной maxSq
+      
+    if ((maxSq ** 2 - n) >= (n - minSq ** 2)) { // если расстояние между n и maxSq**2 больше или равно расстоянию между n и minSq**2,
+        return minSq ** 2; // возвращаем значение minSq**2
+      
+    } else { //иначе
+      return maxSq ** 2; //возвращаем значение maxSq**2
+    }
+  }
+  console.log(nearestSq(111));

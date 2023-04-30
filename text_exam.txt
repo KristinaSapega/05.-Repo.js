@@ -63,3 +63,46 @@ console.log(squareSum([3, 2, 2]));
 на котором мы вызываем метод reduce, чтобы посчитать сумму всех элементов.
 
 //3
+Найти ближайшее квадратное число, nearest_sq(n) или nearest Sq(n), 
+из целого положительного числа n.
+
+Например, если n = 111, то ближайший\_sq(n) (ближайший Sq(n)) равен 121, 
+поскольку 111 ближе к 121, квадрату 11, чем 100, квадрату 10.
+
+Если the n уже является идеальным квадратом 
+(например, n = 144, n = 81 и т.д.), вам нужно просто вернуть n.
+
+Math.sqrt(x)
+Возвращает положительный квадратный корень числа.
+Math.floor(x)
+Возвращает значение числа, округлённое к меньшему целому.
+Math.ceil(x)
+Возвращает значение числа, округлённое к большему целому.
+вар 1
+function nearestSq(n){
+    minSq = Math.floor(Math. sqrt(n)); 
+    maxSq = Math.ceil(Math. sqrt(n));
+      
+    if ((maxSq ** 2 - n) > (n - minSq ** 2)) {
+      return minSq ** 2;
+    } else if ((maxSq ** 2 - n) < (n - minSq ** 2)) {
+      return maxSq ** 2;
+    } else {
+      return n; 
+      }
+    }
+    console.log(nearestSq(345));
+
+    вар 2
+    function nearestSq(n) {
+    const minSq = Math.floor(Math.sqrt(n)); 
+    const maxSq = Math.ceil(Math.sqrt(n)); 
+      
+    if ((maxSq ** 2 - n) >= (n - minSq ** 2)) { 
+        return minSq ** 2; 
+      
+    } else { 
+      return maxSq ** 2; 
+    }
+  }
+  console.log(nearestSq(111));
