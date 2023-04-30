@@ -115,6 +115,27 @@ function nearestSq(n){
     return a*a;
 }
   console.log(nearestSq(111));
-
+___________________________________________
+const nearestSq = n => (Math.round(Math.sqrt(n)))**2
+  console.log(nearestSq(111));
 
   //4
+Завершите решение так, чтобы оно перевернуло переданную в него строку.
+'world'  =>  'dlrow'
+'word'   =>  'drow'
+
+function solution(str){
+  str = str.split ('');
+  str = str.reverse ();
+  str = str.join ('');
+  return (str);
+}
+console.log(solution('world'));
+console.log(solution('word'));
+_________________________________________________
+function solution(str){
+    return str.split('').reverse().join('');  
+  }
+  console.log(solution('world'));
+
+  //5

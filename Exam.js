@@ -79,3 +79,20 @@ function strCount(str, letter){
 
 
   // task 4
+  function solution(str){
+    str = str.split ('');
+    str = str.reverse ();
+    str = str.join ('');
+    return (str);
+  }
+  console.log(solution('world'));
+  console.log(solution('word'));
+
+  //вар 2
+  function solution(str){
+    return str.split('').reverse().join('');  
+  }
+  console.log(solution('world'));
+
+  //task 5
+  
