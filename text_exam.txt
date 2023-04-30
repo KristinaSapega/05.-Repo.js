@@ -106,3 +106,15 @@ function nearestSq(n){
     }
   }
   console.log(nearestSq(111));
+__________________________________________
+Math.round(x)
+Возвращает значение числа, округлённое до ближайшего целого.
+
+function nearestSq(n){
+    let a = Math.round(Math.sqrt(n));
+    return a*a;
+}
+  console.log(nearestSq(111));
+
+
+  //4

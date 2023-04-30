@@ -76,3 +76,6 @@ function strCount(str, letter){
     }
   }
   console.log(nearestSq(111));
+
+
+  // task 4
