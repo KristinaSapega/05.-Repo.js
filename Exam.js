@@ -101,5 +101,28 @@ function strCount(str, letter){
       console.log(addLength('hello world')); //[ 'hello 5', 'world 5' ]
 
 //task 6
+/*есть два параметра: количество манго и цена за манго. 
+Чтобы рассчитать общую стоимость манго, мы должны умножить количество манго на цену за манго.*/
 
-  
+function mango(quantity, price){
+    if (quantity > 0) {
+        return (quantity * price) - Math.floor (quantity / 3) * price;
+    } else {
+        return 0;      
+    }
+}
+console.log(mango (3,3));
+/* Math.floor(quantity / 3) вычисляет количество бесплатных манго, 
+которые можно получить при покупке тройки манго. 
+Так как каждая тройка манго дает одно бесплатное, то можно вычислить это количество 
+как целую часть от деления quantity на 3.
+Вычитание Math.floor(quantity / 3) * price вычитает из общей стоимости манго стоимость бесплатных манго, 
+которые мы получаем при покупке троек.*/
+
+//вар 2
+function mango(quantity, price){
+    return price * (quantity - Math.floor(quantity / 3));
+  }
+  console.log (mango (3, 3));
+
+// task 7
