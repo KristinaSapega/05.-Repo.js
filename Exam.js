@@ -198,3 +198,20 @@ console.log(invert([5, 6, 8]));
   console.log(powersOfTwo(0)); //[ 1 ]
   console.log(powersOfTwo(1)); //[ 1, 2 ]
   console.log(powersOfTwo(2)); //[ 1, 2, 4 ]
+
+// task 10
+function grow (x){
+    x = x.reduce((a,b) => a * b)
+    return x;
+  }
+  console.log (grow ([1,2,3,4])); //24
+  
+  
+//вар 2
+const arr = [1, 2, 3, 4];
+const result = arr.reduce((intermediate, value) => intermediate * value);
+console.log(result); 
+
+//вар 3
+const grow=x=> x.reduce((a,b) => a*b);
+console.log (grow ([1,2,3,4]));
