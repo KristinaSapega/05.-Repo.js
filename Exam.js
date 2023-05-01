@@ -126,3 +126,26 @@ function mango(quantity, price){
   console.log (mango (3, 3));
 
 // task 7
+/* умножение времени на 0.5, 
+округление до наименьшего значения, и возврат полученного значения*/
+
+function litres(time) {
+    if (time > 0) {
+      return Math.floor(time * 0.5);
+    } else {
+      return 0;
+    }
+  }
+  console.log(litres(6.7));
+
+  //вар 2
+  function litres(time) {
+    return Math.floor(time * 0.5);
+  }
+
+  // вар 3
+  function litres(time) {
+    return Math.floor(time/2);
+  }
+
+// task 8
